@@ -17,18 +17,31 @@ namespace Fortune_Teller
             Console.WriteLine("Hmmm... That sounds familiar. What's your last name?");
             Console.ReadLine();
 
-            //asking user for age and telling them their fortune based on answer
-            Console.WriteLine("Ah, yes. I've been expecting you. Tell me... How old are you now?");
+            //user birth month
+            Console.WriteLine("You may be the one I've been waiting on all this time. Your energy has\n been driving me crazy! Just to be sure... Tell me what month you were born in?");
+            Console.ReadLine();
+
+            Console.WriteLine("Hmmm what number month is that again?");
             Console.ReadLine();
 
             ////is their age odd or even?
             ////COME BACK TO (look up moduls, dont use case)
             //string userAge = Console.ReadLine();
+            //asking user for age and telling them their fortune based on answer
+            Console.WriteLine("Ah, yes. That's right. I've been expecting you. Tell me... How old are you now?");
+            int even = int.Parse(Console.ReadLine());
+            
+           
+            if (even % 2 == 0)
+            { 
+                Console.WriteLine("Hmmm... Not sure how you'll take this but you have to work for another 40 years. If it makes you feel better you'll\nbe working as an alpaca rancher until retirement!");
+            }
 
-            ////if userAge = string ();
-
-
-                Console.WriteLine("Really? I have some interesting news for you then.");
+            else
+            {
+                Console.WriteLine("Really? That's awesome! You'll retire in less than two years!");
+            }
+            
 
             // finding out the number of user siblings and where users vacation home will be
             Console.WriteLine("How many siblings do you have?");
@@ -43,8 +56,7 @@ namespace Fortune_Teller
             else if (userSib == 1)
 
             {
-                Console.WriteLine("You'll invest in a vacation home in South America BUT before you can enjoy it\n the home gets looted and burned while youre away.");
-
+                Console.WriteLine("You'll invest in a vacation home in South America where you live out your golden years!");
             }
 
             else if (userSib == 2)
@@ -63,13 +75,13 @@ namespace Fortune_Teller
             {
                 Console.WriteLine("Retirement goes extremely well for you and you now own all of Hawaii which you \n use as a vacation home. \n *cough cough* \n selfishly uprooting all natives from their homes and forcing them to leave the island.");
             }
-
+           
             Console.WriteLine("Hold on.... I'm feeling something....");
-            Console.WriteLine("\a");
+           
             Console.WriteLine(". . .");
-            Console.WriteLine("\a");
+            
             Console.WriteLine(". . .");
-            Console.WriteLine("\a");
+            
 
 
             //ROYGBIV fortunes
@@ -87,10 +99,6 @@ namespace Fortune_Teller
                     Console.WriteLine("It's fine, I'll tell you. ROYGBIV is an acrynom that stands for the colors Red, Orange, Yellow, Green, Blue, Indigo, and Violet.");
                     break;
             }
-
-            Console.WriteLine("Did this help? Y/N?");
-
-
 
 
 
