@@ -37,7 +37,7 @@ namespace Fortune_Teller
                 } 
                 else if (birthMonth >= 9 && birthMonth <= 12)
                 {
-                bankTotal = "no outstanding loans, no children to suck up all\n your money, and 15 million dollars";
+                bankTotal = "no outstanding loans, no children to suck up\n all your money, and 15 million dollars";
                 }
                 else
                 {
@@ -50,8 +50,8 @@ namespace Fortune_Teller
 
             ////is their age odd or even?
             ////COME BACK TO (look up moduls, dont use case)
-            //asking user for age and telling them their fortune based on answer
-            Console.WriteLine("Ah, yes. That's right. I've been expecting you. Tell me... How old are you?");
+            //asking user for age- deciding fortunes based of age # even or odd
+            Console.WriteLine("Tell me... How old are you?");
             string yearsToRetirement;
             int userAge = int.Parse(Console.ReadLine());
             
@@ -81,24 +81,24 @@ namespace Fortune_Teller
             else if (userSib == 1)
 
             {
-                sibNum = "Paris";
+                sibNum = "Paris! Bon jour, amirite??";
             }
 
             else if (userSib == 2)
             {
-                sibNum = "Peru and have your own alpaca farm.";
+                sibNum = "Peru and have your own alpaca farm! Cute!";
             }
 
             else if (userSib == 3)
 
             {
-                sibNum = "Tokyo";
+                sibNum = "Tokyo! Konnichiwa, amirite???";
             }
 
             else 
 
             {
-                sibNum = "Hawaii";
+                sibNum = "Hawaii. Aloha, amirite?";
             }
           
            
@@ -108,7 +108,7 @@ namespace Fortune_Teller
             
 
 
-            //ROYGBIV fortunes
+            //finding users favorite ROYGBIV color
             Console.WriteLine("This might be weird but a persons favorite color from the ROYGBIV spectrum\nreally helps me better understand their fortune. If you don't know\nwhat ROYGBIV IS, enter 'Help' and I'll tell you.");
             string favColor = Console.ReadLine();
             string roygbiv;
@@ -118,6 +118,7 @@ namespace Fortune_Teller
             {
                 Console.WriteLine("ROYGBIV is an acronym for the colors red, orange, yellow, blue, green, indigo, and violet. If you ever forget you can just think of the colors of the rainbow!");
                 Console.WriteLine("What is your favorite ROYGBIV color?");
+                roygbiv = "a spaceship";
             }
 
             else if (favColor == "red")
