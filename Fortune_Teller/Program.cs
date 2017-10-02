@@ -116,13 +116,46 @@ namespace Fortune_Teller
             roygbiv = "";
             if (favColor == "help")
             {
-                Console.WriteLine("ROYGBIV is an acronym for the colors red, orange, yellow, blue, green, indigo, and violet. If you ever forget you can just think of the colors of the rainbow!");
+                Console.WriteLine("ROYGBIV is an acronym for the colors red, orange, yellow, blue, green, indigo,\n and violet. If you ever forget you can just think of the colors of the rainbow!");
                 Console.WriteLine("What is your favorite ROYGBIV color?");
-                roygbiv = "a spaceship";
+                favColor = Console.ReadLine();
+                if (favColor == "red")
+                {
+                    roygbiv = "the rapid";
+                }
+                else if (favColor == "orange")
+                {
+                    roygbiv = "on Usain Bolt's back";
+                }
+                else if (favColor == "yellow")
+                {
+                    roygbiv = "on a massive army of ants";
+                }
+                else if (favColor == "green")
+                {
+                    roygbiv = "in a brand new BMW";
+                }
+                else if (favColor == "blue")
+                {
+                    roygbiv = "a shiny new Farari";
+                }
+                else if (favColor == "indigo")
+                {
+                    roygbiv = "in your own private jet";
+                }
+                else if (favColor == "violet")
+                {
+                    roygbiv = "in the Batmobile";
+                }
+                else
+                {
+                    roygbiv = "in a rainbow patteren Mystery Van";
+                }
+
             }
 
             else if (favColor == "red")
-            {
+            { 
                 roygbiv = "the rapid";
             }
             else if (favColor == "orange")
